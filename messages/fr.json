@@ -1,0 +1,631 @@
+{
+  "meta": {
+    "title": "TiiBnTick — Logistique unifiée pour l'Afrique",
+    "description": "Une plateforme logistique unifiée pour l'Afrique. Du quartier au village, nous connectons tout le monde."
+  },
+  "nav": {
+    "discover": "Découvrir",
+    "login": "Se connecter",
+    "getStarted": "Commencer maintenant"
+  },
+  "hero": {
+    "seasonalBadge": "Noël Logistique Afrique",
+    "seasonalOffer": "Offre Spéciale Fêtes",
+    "titleLine1": "Envoyez. Recevez.",
+    "titleLine2": "Célébrez sans limite.",
+    "subtitle": "Une plateforme logistique unifiée pour l'Afrique.",
+    "description": "Du quartier au village, nous connectons tout le monde.",
+    "sendNow": "Envoyer maintenant",
+    "trackParcel": "Suivre un colis"
+  },
+  "platforms": {
+    "sectionLabel": "La Suite TiiBnTick",
+    "sectionTitle": "Découvrez nos solutions",
+    "discover": "Découvrir",
+    "link": {
+      "name": "TiiBnTick Link",
+      "category": "Pré-enregistrement & Transit",
+      "tagline": "La solution pour les particuliers et le commerce de proximité. Gérez le pré-enregistrement, le dépôt et le retrait via des micro-hubs, même dans les zones sans adresse formelle.",
+      "features": ["Entrée principale utilisateur", "QR Code Sécurisé", "Micro-hubs (Call-box/Boutiques)", "Optimisé réseaux faibles"]
+    },
+    "go": {
+      "name": "TiiBnTick Go",
+      "category": "Annonces & Disponibilités",
+      "tagline": "Marketplace d'opportunités en temps réel. Publiez des annonces de colis à collecter et matchez avec les disponibilités des freelances et benskinneurs grâce à la géolocalisation.",
+      "features": ["Matching Intelligent", "Visibilité Temps Réel", "Connexion Client-Freelance", "Opportunités inclusives"]
+    },
+    "agency": {
+      "name": "TiiBnTick Agency",
+      "category": "ERP Logistique Complet",
+      "tagline": "Un outil de gestion professionnel pour les agences de transport. Centralisez votre flotte, pilotez vos flux multi-sites, gérez la facturation et les bordereaux électroniques.",
+      "features": ["Pilotage Multi-sites & Agents", "Planification de tournées", "Suivi & Facturation", "Mode Offline-First"]
+    },
+    "point": {
+      "name": "TiiBnTick Point",
+      "category": "Gestion Points Relais",
+      "tagline": "Convertissez instantanément boutiques, stations ou cybercafés en acteurs logistiques légitimes. Gérez les entrées/sorties, validez les colis et suivez vos commissions.",
+      "features": ["Enregistrement Rapide", "Gestion files d'attente", "Commissions automatiques", "Rapports journaliers"]
+    },
+    "freelancer": {
+      "name": "TiiBnTick Freelancer",
+      "category": "Pour Livreurs Indépendants",
+      "tagline": "L'application dédiée pour professionnaliser les benskinneurs et transporteurs individuels. Gagnez en crédibilité avec un profil pro, un historique de course et des paiements sécurisés.",
+      "features": ["Profil Pro & Réputation", "Gestion des missions", "Optimisation trajets", "Revenus structurés"]
+    },
+    "market": {
+      "name": "TiiBnTick Market",
+      "category": "Vitrine & Recherche",
+      "tagline": "Le moteur de découverte public. Le point d'entrée pour trouver une agence, un point relais, un livreur ou comparer les offres de services logistiques disponibles.",
+      "features": ["Moteur de recherche", "Comparateur Prix/Délais", "Trouver une Agence", "Vitrine des services"]
+    }
+  },
+  "infrastructure": {
+    "sectionLabel": "Infrastructure & Technologie",
+    "sectionTitle": "La Puissance Transversale",
+    "sectionDescription": "Au-delà des modules, une architecture robuste assure la cohésion, la sécurité et la traçabilité de tout le système TiiBnTick.",
+    "search": {
+      "name": "TiiBnTick Search",
+      "subtitle": "Recherche & Tracking Universels",
+      "description": "Un moteur de recherche multi-critères couvrant l'ensemble de l'écosystème.",
+      "features": ["Tracking global de bout en bout", "Recherche par QR Code, nom, plage horaire", "Localisation précise des points relais", "Filtrage intelligent et historique"]
+    },
+    "core": {
+      "name": "TiiBnTick Core",
+      "subtitle": "Le Noyau Partagé & API",
+      "description": "La colonne vertébrale technologique. Le moteur partagé par l'ensemble de la suite.",
+      "features": ["Orchestration des services (Microservices)", "Modèle scalable, PWA, temps réel", "Sécurité & Authentification centralisée", "Intégration mobile & IoT (Mode Offline)"]
+    },
+    "confidence": {
+      "name": "TiiBnTick Confidence",
+      "subtitle": "Trust Layer Blockchain",
+      "description": "L'assurance confiance pour amener la logistique informelle au niveau international.",
+      "features": ["Validation immuable des opérations", "Preuve de dépôt / livraison", "Réduction des litiges", "Traçabilité renforcée"]
+    }
+  },
+  "audience": {
+    "sectionLabel": "Une solution inclusive",
+    "sectionTitle": "Pour qui avons-nous bâti ce réseau ?",
+    "particulier": {
+      "title": "Particuliers",
+      "description": "Envoyez des colis à vos proches ou recevez vos achats, du quartier au village."
+    },
+    "freelance": {
+      "title": "Freelances & Livreurs",
+      "description": "Benskinneurs et coursiers : trouvez des courses et sécurisez vos revenus."
+    },
+    "pointRelais": {
+      "title": "Points Relais",
+      "description": "Commerces de proximité : devenez des hubs logistiques et augmentez votre trafic."
+    },
+    "agence": {
+      "title": "Agences de Transport",
+      "description": "Digitalisez votre flotte de bus ou de camions et gérez vos gares routières."
+    },
+    "commercant": {
+      "title": "Petits Commerçants",
+      "description": "E-commerçants informels : expédiez facilement vos produits à vos clients."
+    },
+    "entreprise": {
+      "title": "Entreprises & ONG",
+      "description": "Gérez la logistique du dernier kilomètre pour vos opérations à grande échelle."
+    }
+  },
+  "cta": {
+    "title": "Prêt à connecter l'Afrique ?",
+    "description": "Rejoignez une communauté de milliers d'utilisateurs et transformez la façon dont nous échangeons des biens.",
+    "button": "Commencer maintenant"
+  },
+  "footer": {
+    "tagline": "La solution simple et fiable pour tous vos envois de colis au Cameroun.",
+    "navigation": "Navigation",
+    "sendParcel": "Envoyer un colis",
+    "howItWorks": "Comment ça marche",
+    "proSpace": "Espace PRO",
+    "trackParcel": "Suivre un colis",
+    "legal": "Légal",
+    "legalMentions": "Mentions Légales",
+    "terms": "Conditions d'Utilisation",
+    "privacy": "Politique de Confidentialité",
+    "cookies": "Politique de Cookies",
+    "followUs": "Suivez-nous",
+    "copyright": "© {year} TiiBnTick Cameroun. Tous droits réservés."
+  },
+  "commencer": {
+    "metaTitle": "Créer un compte — TiiBnTick",
+    "metaDescription": "Choisissez le type de compte adapté à votre profil et rejoignez l'écosystème TiiBnTick.",
+    "title": "Quel type de compte souhaitez-vous créer ?",
+    "subtitle": "Sélectionnez votre profil pour être redirigé vers la plateforme adaptée à vos besoins.",
+    "createAccount": "Créer mon compte",
+    "backHome": "Retour à l'accueil",
+    "alreadyHaveAccount": "Déjà un compte ?",
+    "signIn": "Se connecter",
+    "particulier": {
+      "title": "Particulier",
+      "description": "Envoyez et recevez des colis facilement, même sans adresse formelle."
+    },
+    "freelance": {
+      "title": "Freelance / Livreur",
+      "description": "Professionnalisez vos courses et sécurisez vos revenus."
+    },
+    "pointRelais": {
+      "title": "Point Relais",
+      "description": "Transformez votre commerce en hub logistique et gagnez des commissions."
+    },
+    "agence": {
+      "title": "Agence de Transport",
+      "description": "Digitalisez votre flotte et gérez vos opérations multi-sites."
+    },
+    "commercant": {
+      "title": "Petit Commerçant",
+      "description": "Publiez des annonces et connectez-vous avec des livreurs disponibles."
+    },
+    "entreprise": {
+      "title": "Entreprise / ONG",
+      "description": "Pilotez la logistique du dernier kilomètre à grande échelle."
+    }
+  },
+  "connexion": {
+    "metaTitle": "Se connecter — TiiBnTick",
+    "metaDescription": "Accédez à votre espace sur la plateforme TiiBnTick de votre choix.",
+    "title": "Connectez-vous à votre plateforme",
+    "subtitle": "Sélectionnez la plateforme sur laquelle vous avez un compte.",
+    "login": "Se connecter",
+    "noAccount": "Pas encore de compte ?",
+    "createAccount": "Créer un compte",
+    "backHome": "Retour à l'accueil"
+  },
+  "platformPage": {
+    "featuresTitle": "Fonctionnalités clés",
+    "getStarted": "Commencer maintenant",
+    "login": "Se connecter",
+    "learnMore": "En savoir plus",
+    "backToSuite": "Voir toute la suite",
+    "link": {
+      "metaTitle": "TiiBnTick Link",
+      "metaDescription": "La logistique unifiée sans adresse formelle. Pré-enregistrement, micro-hubs et transit sécurisé pour le dernier kilomètre africain.",
+      "heroTitle": "TiiBnTick Link",
+      "heroSubtitle": "Pré-enregistrement & Transit",
+      "heroDescription": "La solution pour les particuliers et le commerce de proximité. Gérez le pré-enregistrement, le dépôt et le retrait via des micro-hubs, même dans les zones sans adresse formelle.",
+      "solutionBadge": "Solution TiiBnTick",
+      "heroTitleLine1": "La logistique unifiée,",
+      "heroTitleLine2": "Sans adresse formelle.",
+      "primaryCta": "Envoyer un Colis",
+      "secondaryCta": "Trouver un Point Relais",
+      "trustBadges": ["Sécurité", "24/7", "Micro-Hubs", "Low-Data", "Optimisé"],
+      "heroCard": {
+        "processing": "Traitement...",
+        "progress": "75%",
+        "title": "Expédition Simplifiée",
+        "subtitle": "QR Code",
+        "description": "Conçu pour surmonter l'absence d'adresses et la fragmentation des services."
+      },
+      "innovation": {
+        "sectionLabel": "Innovation",
+        "sectionTitle": "Conçu pour l'Afrique urbaine",
+        "items": [
+          {
+            "category": "Innovation",
+            "title": "Zones Sans Adresse",
+            "description": "Technologie de géolocalisation relative permettant de livrer là où le système d'adressage est incomplet ou absent."
+          },
+          {
+            "category": "Proximité",
+            "title": "Réseau Micro-Hubs",
+            "description": "Transformation des petites boutiques et call-box en points de relais logistiques officiels pour le dépôt et retrait."
+          },
+          {
+            "category": "Tech",
+            "title": "Optimisé Android",
+            "description": "Architecture légère conçue pour fonctionner fluide sur les smartphones d'entrée de gamme largement utilisés."
+          },
+          {
+            "category": "Trace",
+            "title": "Tracking Hybride",
+            "description": "Historique complet et retransmission des données même lors de transits complexes (multi-legs, multi-transporteurs)."
+          }
+        ]
+      },
+      "workflow": {
+        "sectionLabel": "Workflow",
+        "sectionTitle": "Circuit du Colis",
+        "steps": [
+          {
+            "title": "Pré-enregistrement",
+            "description": "L'utilisateur génère une demande et obtient un QR code unique avant même de se déplacer."
+          },
+          {
+            "title": "Dépôt Sécurisé",
+            "description": "Remise au Point Relais. Le responsable scanne et valide l'entrée physique dans le réseau."
+          },
+          {
+            "title": "Transit & Hops",
+            "description": "Acheminement via la chaîne logistique (inter-hubs) avec traçabilité à chaque point de rupture."
+          },
+          {
+            "title": "Retrait Client",
+            "description": "Notification SMS/Push. Le destinataire présente son code sécurisé pour retirer le paquet."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Prêt à transformer votre logistique ?",
+        "description": "Rejoignez la plateforme et accédez immédiatement aux outils.",
+        "getStarted": "Commencer",
+        "contact": "Contact"
+      }
+    },
+    "go": {
+      "metaTitle": "TiiBnTick Go — Annonces & Disponibilités",
+      "metaDescription": "Marketplace d'opportunités logistiques en temps réel.",
+      "heroTitle": "TiiBnTick Go",
+      "heroSubtitle": "Annonces & Disponibilités",
+      "heroDescription": "Marketplace d'opportunités en temps réel. Publiez des annonces de colis à collecter et matchez avec les disponibilités des freelances et benskinneurs grâce à la géolocalisation.",
+      "solutionBadge": "Solution TiiBnTick",
+      "heroTitleLine1": "Le marketplace logistique",
+      "heroTitleLine2": "en temps réel.",
+      "primaryCta": "Publier une Annonce",
+      "secondaryCta": "Voir les Disponibilités",
+      "trustBadges": ["Matching Intelligent", "Temps Réel", "Géolocalisation"],
+      "heroCard": {
+        "processing": "Traitement...",
+        "progress": "75%",
+        "title": "Marketplace Active",
+        "subtitle": "Opportunités",
+        "description": "Connectez clients et livreurs disponibles instantanément grâce au matching géolocalisé."
+      },
+      "innovation": {
+        "sectionLabel": "Fonctionnalités",
+        "sectionTitle": "Des opportunités pour tous",
+        "items": [
+          {
+            "category": "Matching",
+            "title": "Matching Intelligent",
+            "description": "Algorithme de mise en relation entre annonces de colis et livreurs disponibles à proximité."
+          },
+          {
+            "category": "Visibilité",
+            "title": "Visibilité Temps Réel",
+            "description": "Tableau de bord dynamique des annonces actives et des disponibilités sur la carte."
+          },
+          {
+            "category": "Connexion",
+            "title": "Connexion Client-Freelance",
+            "description": "Canal direct entre expéditeurs et transporteurs indépendants de l'écosystème."
+          },
+          {
+            "category": "Inclusion",
+            "title": "Opportunités Inclusives",
+            "description": "Ouverture du marché aux benskinneurs et coursiers informels pour des revenus structurés."
+          }
+        ]
+      },
+      "workflow": {
+        "sectionLabel": "Workflow",
+        "sectionTitle": "Du besoin à la livraison",
+        "steps": [
+          {
+            "title": "1. Publication",
+            "description": "Le commerçant ou particulier publie une annonce de colis à collecter avec lieu et créneau."
+          },
+          {
+            "title": "2. Matching",
+            "description": "Le système propose les livreurs disponibles les plus proches et les mieux notés."
+          },
+          {
+            "title": "3. Collecte",
+            "description": "Le freelance accepte la mission, récupère le colis et valide la prise en charge."
+          },
+          {
+            "title": "4. Livraison",
+            "description": "Suivi en temps réel jusqu'à la remise finale et confirmation du destinataire."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Prêt à transformer votre logistique ?",
+        "description": "Rejoignez la plateforme et accédez immédiatement aux outils.",
+        "getStarted": "Commencer",
+        "contact": "Contact"
+      }
+    },
+    "agency": {
+      "metaTitle": "TiiBnTick Agency — ERP Logistique",
+      "metaDescription": "ERP complet pour agences de transport en Afrique.",
+      "heroTitle": "TiiBnTick Agency",
+      "heroSubtitle": "ERP Logistique Complet",
+      "heroDescription": "Pilotez votre flotte, vos hubs et vos flux financiers avec une suite Offline-First conçue pour les infrastructures locales.",
+      "solutionBadge": "Solution TiiBnTick",
+      "heroTitleLine1": "L'ERP Logistique",
+      "heroTitleLine2": "pour l'Afrique moderne.",
+      "primaryCta": "Digitaliser mon Agence",
+      "secondaryCta": "Demander une Démo",
+      "trustBadges": ["ERP Tout-en-un", "Offline Resilient", "IoT Connecté"],
+      "heroCard": {
+        "processing": "Traitement...",
+        "progress": "75%",
+        "title": "Gestion Agence 360°",
+        "subtitle": "Centralisé",
+        "description": "Des opérations au sol jusqu'à la comptabilité, tout est centralisé."
+      },
+      "innovation": {
+        "sectionLabel": "Fonctionnalités",
+        "sectionTitle": "Pilotage complet de votre agence",
+        "items": [
+          {
+            "category": "Admin",
+            "title": "Pilotage Multi-Sites",
+            "description": "Vision centralisée de toutes vos agences, dépôts et hubs urbains depuis un seul dashboard admin."
+          },
+          {
+            "category": "Tech",
+            "title": "Mode Offline-First",
+            "description": "Continuité de service garantie même en cas de coupure internet, avec synchronisation automatique."
+          },
+          {
+            "category": "Finance",
+            "title": "Bordereaux Numériques",
+            "description": "Automatisation de la facturation, génération de feuilles de route et rapports de performance."
+          },
+          {
+            "category": "Flotte",
+            "title": "Gestion de Flotte",
+            "description": "Suivi des véhicules, affectation des chauffeurs et intégration IoT (Traceurs GPS)."
+          }
+        ]
+      },
+      "workflow": {
+        "sectionLabel": "Workflow",
+        "sectionTitle": "Digitalisation Agence",
+        "steps": [
+          {
+            "title": "1. Onboarding",
+            "description": "Création de la structure mère et de ses succursales (points de vente)."
+          },
+          {
+            "title": "2. Staffing",
+            "description": "Création des comptes agents avec rôles précis (guichetier, logistique, chauffeur)."
+          },
+          {
+            "title": "3. Opérations",
+            "description": "Traitement des colis : Enregistrement, Etiquetage, Groupage, Expédition."
+          },
+          {
+            "title": "4. Monitoring",
+            "description": "Suivi en temps réel des camions et notification clients à l'arrivée."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Prêt à transformer votre logistique ?",
+        "description": "Rejoignez la plateforme et accédez immédiatement aux outils.",
+        "getStarted": "Commencer",
+        "contact": "Contact"
+      }
+    },
+    "point": {
+      "metaTitle": "TiiBnTick Point — Points Relais",
+      "metaDescription": "Gérez votre point relais et vos commissions.",
+      "heroTitle": "TiiBnTick Point",
+      "heroSubtitle": "Gestion Points Relais",
+      "heroDescription": "Convertissez instantanément boutiques, stations ou cybercafés en acteurs logistiques légitimes. Gérez les entrées/sorties, validez les colis et suivez vos commissions.",
+      "solutionBadge": "Solution TiiBnTick",
+      "heroTitleLine1": "Votre commerce,",
+      "heroTitleLine2": "devient Point Relais.",
+      "primaryCta": "Devenir Point Relais",
+      "secondaryCta": "Voir la Documentation",
+      "trustBadges": ["Enregistrement Rapide", "Commissions Auto", "Rapports Journaliers"],
+      "heroCard": {
+        "processing": "Traitement...",
+        "progress": "75%",
+        "title": "Gestion Point Relais",
+        "subtitle": "Simplifié",
+        "description": "Interface intuitive pour gérer les flux entrants et sortants de colis au quotidien."
+      },
+      "innovation": {
+        "sectionLabel": "Fonctionnalités",
+        "sectionTitle": "Tout pour gérer votre relais",
+        "items": [
+          {
+            "category": "Enregistrement",
+            "title": "Enregistrement Rapide",
+            "description": "Scan QR et validation instantanée des colis entrants et sortants."
+          },
+          {
+            "category": "Flux",
+            "title": "Gestion Files d'Attente",
+            "description": "Organisation des retraits clients et optimisation du flux en boutique."
+          },
+          {
+            "category": "Finance",
+            "title": "Commissions Automatiques",
+            "description": "Calcul et suivi transparent de vos revenus sur chaque opération logistique."
+          },
+          {
+            "category": "Reporting",
+            "title": "Rapports Journaliers",
+            "description": "Synthèse quotidienne des activités, volumes et commissions générées."
+          }
+        ]
+      },
+      "workflow": {
+        "sectionLabel": "Workflow",
+        "sectionTitle": "Devenir acteur logistique",
+        "steps": [
+          {
+            "title": "1. Inscription",
+            "description": "Créez votre compte Point Relais et configurez votre établissement."
+          },
+          {
+            "title": "2. Validation",
+            "description": "Vérification de votre commerce et activation sur le réseau TiiBnTick."
+          },
+          {
+            "title": "3. Réception",
+            "description": "Accueil des colis, scan et stockage sécurisé en attente de retrait."
+          },
+          {
+            "title": "4. Commission",
+            "description": "Remise au client final et crédit automatique de votre commission."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Prêt à transformer votre logistique ?",
+        "description": "Rejoignez la plateforme et accédez immédiatement aux outils.",
+        "getStarted": "Commencer",
+        "contact": "Contact"
+      }
+    },
+    "freelancer": {
+      "metaTitle": "TiiBnTick Freelancer — Livreurs Indépendants",
+      "metaDescription": "L'application pour professionnaliser les livreurs indépendants.",
+      "heroTitle": "TiiBnTick Freelancer",
+      "heroSubtitle": "Pour Livreurs Indépendants",
+      "heroDescription": "L'application dédiée pour professionnaliser les benskinneurs et transporteurs individuels. Gagnez en crédibilité avec un profil pro, un historique de course et des paiements sécurisés.",
+      "solutionBadge": "Solution TiiBnTick",
+      "heroTitleLine1": "Professionnalisez",
+      "heroTitleLine2": "vos courses.",
+      "primaryCta": "Créer mon Profil Pro",
+      "secondaryCta": "Voir les Missions",
+      "trustBadges": ["Profil Certifié", "Missions Locales", "Paiements Sécurisés"],
+      "heroCard": {
+        "processing": "Traitement...",
+        "progress": "75%",
+        "title": "Espace Livreur Pro",
+        "subtitle": "Mobile",
+        "description": "Gérez vos missions, optimisez vos trajets et suivez vos revenus depuis votre smartphone."
+      },
+      "innovation": {
+        "sectionLabel": "Fonctionnalités",
+        "sectionTitle": "L'outil des livreurs indépendants",
+        "items": [
+          {
+            "category": "Profil",
+            "title": "Profil Pro & Réputation",
+            "description": "Badge vérifié, notes clients et historique de courses pour gagner la confiance."
+          },
+          {
+            "category": "Missions",
+            "title": "Gestion des Missions",
+            "description": "Acceptation, suivi et clôture des courses en temps réel depuis l'application."
+          },
+          {
+            "category": "Trajets",
+            "title": "Optimisation Trajets",
+            "description": "Suggestions d'itinéraires et regroupement de courses pour maximiser vos gains."
+          },
+          {
+            "category": "Revenus",
+            "title": "Revenus Structurés",
+            "description": "Suivi des paiements, commissions et historique financier transparent."
+          }
+        ]
+      },
+      "workflow": {
+        "sectionLabel": "Workflow",
+        "sectionTitle": "Votre parcours livreur",
+        "steps": [
+          {
+            "title": "1. Inscription",
+            "description": "Créez votre profil professionnel avec documents et zone d'intervention."
+          },
+          {
+            "title": "2. Mission",
+            "description": "Recevez et acceptez des courses depuis Go ou les agences partenaires."
+          },
+          {
+            "title": "3. Course",
+            "description": "Collectez, transportez et livrez avec suivi GPS en temps réel."
+          },
+          {
+            "title": "4. Paiement",
+            "description": "Validation de la livraison et crédit sécurisé de votre rémunération."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Prêt à transformer votre logistique ?",
+        "description": "Rejoignez la plateforme et accédez immédiatement aux outils.",
+        "getStarted": "Commencer",
+        "contact": "Contact"
+      }
+    },
+    "market": {
+      "metaTitle": "TiiBnTick Market — Vitrine & Recherche",
+      "metaDescription": "Trouvez et comparez les services logistiques.",
+      "heroTitle": "TiiBnTick Market",
+      "heroSubtitle": "Vitrine & Recherche",
+      "heroDescription": "La vitrine publique pour trouver, comparer et suivre n'importe quel service logistique de l'écosystème.",
+      "solutionBadge": "Solution TiiBnTick",
+      "heroTitleLine1": "Le moteur de recherche",
+      "heroTitleLine2": "logistique universel.",
+      "primaryCta": "Explorer le Marché",
+      "secondaryCta": "Trouver une agence",
+      "trustBadges": ["100% Visibilité", "Suivi Unifié", "Recherche Intelligente"],
+      "heroCard": {
+        "processing": "Traitement...",
+        "progress": "75%",
+        "title": "Agrégateur de Services",
+        "subtitle": "Écosystème",
+        "description": "Tout l'écosystème TiiBnTick accessible en un clic."
+      },
+      "innovation": {
+        "sectionLabel": "Fonctionnalités",
+        "sectionTitle": "Découvrez l'écosystème logistique",
+        "items": [
+          {
+            "category": "Recherche",
+            "title": "Recherche Unifiée",
+            "description": "Moteur multicritères : trouvez colis, freelances, agences ou points relais."
+          },
+          {
+            "category": "Suivi",
+            "title": "Tracking Global",
+            "description": "Suivi de bout en bout quel que soit le transporteur, via Code ou QR."
+          },
+          {
+            "category": "Comparaison",
+            "title": "Comparateur",
+            "description": "Transparence totale sur les prix, délais et la réputation des prestataires."
+          },
+          {
+            "category": "Cartographie",
+            "title": "Annuaire Pro",
+            "description": "Cartographie interactive des milliers de points de services disponibles."
+          }
+        ]
+      },
+      "workflow": {
+        "sectionLabel": "Workflow",
+        "sectionTitle": "Expérience Utilisateur",
+        "steps": [
+          {
+            "title": "1. Besoin",
+            "description": "L'utilisateur cherche 'Livraison Douala' ou un numéro de suivi."
+          },
+          {
+            "title": "2. Résultats",
+            "description": "Affichage des meilleures options triées par prix/fiabilité."
+          },
+          {
+            "title": "3. Action",
+            "description": "Réservation directe ou tracking en temps réel."
+          },
+          {
+            "title": "4. Feedback",
+            "description": "L'utilisateur laisse un avis certifié sur le prestataire."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Prêt à transformer votre logistique ?",
+        "description": "Rejoignez la plateforme et accédez immédiatement aux outils.",
+        "getStarted": "Commencer",
+        "contact": "Contact"
+      }
+    }
+  },
+  "common": {
+    "learnMore": "En savoir plus"
+  }
+}

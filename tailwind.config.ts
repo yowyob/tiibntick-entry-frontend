@@ -1,0 +1,63 @@
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './lib/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      colors: {
+        brand: {
+          50: '#fff7ed',
+          100: '#ffedd5',
+          200: '#fed7aa',
+          300: '#fdba74',
+          400: '#fb923c',
+          500: '#f97316',
+          600: '#ea580c',
+          700: '#c2410c',
+        },
+        ink: {
+          950: '#0a0a0f',
+          900: '#111118',
+          800: '#1a1a24',
+        },
+        stone: {
+          400: '#a8a29e',
+          300: '#d6d3d1',
+        },
+      },
+      backgroundImage: {
+        'hero-gradient':
+          'radial-gradient(ellipse 80% 60% at 50% -20%, rgba(249,115,22,0.18), transparent), radial-gradient(ellipse 60% 40% at 80% 50%, rgba(251,146,60,0.08), transparent)',
+        'card-glow': 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%)',
+      },
+      boxShadow: {
+        glow: '0 0 40px -10px rgba(249,115,22,0.35)',
+        'glow-sm': '0 0 20px -5px rgba(249,115,22,0.25)',
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.6s ease-out forwards',
+        float: 'float 6s ease-in-out infinite',
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-8px)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
+
+export default config
