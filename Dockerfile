@@ -8,7 +8,7 @@ ENV NEXT_PUBLIC_LINK_LANDING_URL=${NEXT_PUBLIC_LINK_LANDING_URL}
 ARG NEXT_PUBLIC_LINK_REGISTER_URL=https://tiibntick-link.yowyob.com/register
 ENV NEXT_PUBLIC_LINK_REGISTER_URL=${NEXT_PUBLIC_LINK_REGISTER_URL}
 COPY package.json package-lock.json* ./
-RUN npm ci
+RUN npm install --no-audit --no-fund
 COPY . .
 RUN npm run build
 FROM node:20-alpine AS runtime
