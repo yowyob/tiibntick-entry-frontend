@@ -130,6 +130,13 @@
     "followUs": "Follow us",
     "copyright": "© {year} TiiBnTick Cameroon. All rights reserved."
   },
+  "cookieConsent": {
+    "title": "We use cookies",
+    "description": "This site uses cookies to ensure proper operation and improve your browsing experience. You can accept or decline non-essential cookies. Learn more in our",
+    "accept": "Accept all",
+    "reject": "Decline",
+    "policy": "cookie policy"
+  },
   "commencer": {
     "metaTitle": "Create an account — TiiBnTick",
     "metaDescription": "Choose the account type that fits your profile and join the TiiBnTick ecosystem.",

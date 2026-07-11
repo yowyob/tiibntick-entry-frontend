@@ -60,7 +60,7 @@ export default async function StartPage({ params }: Props) {
 
           {t('alreadyHaveAccount')}{' '}
 
-          <Link href="/login" className="inline-flex items-center gap-1 text-brand-400 hover:text-brand-300 font-medium transition-colors">
+          <Link href="/login" className="inline-flex items-center gap-1 text-brand-600 hover:text-brand-700 font-medium transition-colors">
 
             {t('signIn')}
 

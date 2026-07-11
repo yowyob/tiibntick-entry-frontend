@@ -23,23 +23,23 @@ const config: Config = {
           700: '#c2410c',
         },
         ink: {
-          950: '#0a0a0f',
-          900: '#111118',
-          800: '#1a1a24',
+          950: '#F7F6F4',
+          900: '#ffffff',
+          800: '#f5f5f4',
         },
         stone: {
-          400: '#a8a29e',
-          300: '#d6d3d1',
+          400: '#78716c',
+          300: '#57534e',
         },
       },
       backgroundImage: {
         'hero-gradient':
-          'radial-gradient(ellipse 80% 60% at 50% -20%, rgba(249,115,22,0.18), transparent), radial-gradient(ellipse 60% 40% at 80% 50%, rgba(251,146,60,0.08), transparent)',
-        'card-glow': 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%)',
+          'radial-gradient(ellipse 80% 60% at 50% -20%, rgba(249,115,22,0.12), transparent), radial-gradient(ellipse 60% 40% at 80% 50%, rgba(251,146,60,0.06), transparent)',
+        'card-glow': 'linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,246,244,1) 100%)',
       },
       boxShadow: {
-        glow: '0 0 40px -10px rgba(249,115,22,0.35)',
-        'glow-sm': '0 0 20px -5px rgba(249,115,22,0.25)',
+        glow: '0 0 40px -10px rgba(249,115,22,0.28)',
+        'glow-sm': '0 0 20px -5px rgba(249,115,22,0.2)',
       },
       animation: {
         'fade-up': 'fadeUp 0.6s ease-out forwards',

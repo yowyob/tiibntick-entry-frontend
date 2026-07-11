@@ -13,9 +13,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    color-scheme: light;
   }
   body {
-    @apply bg-ink-950 text-white font-sans;
+    @apply bg-[#F7F6F4] text-stone-900 font-sans;
     overflow-x: hidden;
   }
 }
@@ -34,17 +35,17 @@
   }
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl
-           border border-white/20 bg-white/5 hover:bg-white/10 text-white
-           font-semibold text-sm transition-all duration-200 backdrop-blur-sm;
+           border border-stone-200 bg-white hover:bg-stone-50 text-stone-800
+           font-semibold text-sm transition-all duration-200 shadow-sm;
   }
   .btn-ghost {
     @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg
-           text-stone-300 hover:text-white hover:bg-white/5 font-medium text-sm
+           text-stone-600 hover:text-stone-900 hover:bg-stone-100 font-medium text-sm
            transition-all duration-200;
   }
   .glass-card {
-    @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm
-           hover:bg-white/[0.07] transition-all duration-300;
+    @apply rounded-2xl border border-stone-200/90 bg-white shadow-sm
+           hover:border-stone-300 hover:shadow-md transition-all duration-300;
   }
 }
 
@@ -58,7 +59,7 @@
 .snowflake {
   position: absolute;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(249, 115, 22, 0.35);
   animation: snowfall linear infinite;
   pointer-events: none;
   user-select: none;

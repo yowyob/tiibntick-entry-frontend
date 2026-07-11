@@ -15,15 +15,15 @@ export default function Navbar() {
   const isHome = pathname === '/'
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-ink-950/80 backdrop-blur-xl">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-stone-200/80 bg-white/90 backdrop-blur-xl">
       <div className="container-main">
         <div className="flex items-center justify-between h-16 lg:h-18">
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="w-9 h-9 rounded-xl bg-brand-500 flex items-center justify-center shadow-glow-sm group-hover:shadow-glow transition-shadow">
               <Package size={18} className="text-white" />
             </div>
-            <span className="font-bold text-lg tracking-tight">
-              TiiB<span className="text-brand-400">n</span>Tick
+            <span className="font-bold text-lg tracking-tight text-stone-900">
+              TiiB<span className="text-brand-500">n</span>Tick
             </span>
           </Link>
 
@@ -42,7 +42,7 @@ export default function Navbar() {
 
           <button
             type="button"
-            className="md:hidden p-2 rounded-lg hover:bg-white/5"
+            className="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100"
             onClick={() => setOpen(!open)}
             aria-label="Menu"
           >
@@ -51,7 +51,7 @@ export default function Navbar() {
         </div>
 
         {open && (
-          <div className="md:hidden pb-4 border-t border-white/5 pt-3 space-y-1">
+          <div className="md:hidden pb-4 border-t border-stone-200 pt-3 space-y-1">
             {isHome && (
               <a href="#platforms" className="block btn-ghost w-full text-left" onClick={() => setOpen(false)}>
                 {t('discover')}

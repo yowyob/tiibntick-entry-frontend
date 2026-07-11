@@ -19,7 +19,7 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <div className="flex items-center rounded-lg border border-white/10 overflow-hidden text-xs font-semibold">
+    <div className="flex items-center rounded-lg border border-stone-200 overflow-hidden text-xs font-semibold bg-white">
       {locales.map(({ code, label }) => (
         <button
           key={code}
@@ -28,8 +28,8 @@ export default function LocaleSwitcher() {
           className={clsx(
             'px-2.5 py-1.5 transition-colors',
             locale === code
-              ? 'bg-brand-500/20 text-brand-400'
-              : 'text-stone-400 hover:text-white hover:bg-white/5',
+              ? 'bg-brand-500/15 text-brand-600'
+              : 'text-stone-500 hover:text-stone-900 hover:bg-stone-50',
           )}
         >
           {label}

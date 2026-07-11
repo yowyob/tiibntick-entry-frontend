@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import CookieConsent from '@/components/layout/CookieConsent'
 import { SiteConfigProvider } from '@/components/providers/SiteConfigProvider'
 import { getSiteConfig } from '@/lib/site-config'
 import '../globals.css'
@@ -43,6 +44,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Navbar />
             <main className="min-h-screen">{children}</main>
             <Footer />
+            <CookieConsent />
           </SiteConfigProvider>
         </NextIntlClientProvider>
       </body>

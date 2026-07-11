@@ -12,13 +12,13 @@ export default function PlatformsSection() {
   const icons = usePlatformIcons()
 
   return (
-    <section id="platforms" className="section-padding bg-ink-900/50">
+    <section id="platforms" className="section-padding bg-white">
       <div className="container-main">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <p className="text-brand-400 font-semibold text-sm uppercase tracking-wider mb-3">
+          <p className="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-3">
             {t('sectionLabel')}
           </p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
             {t('sectionTitle')}
           </h2>
         </div>
@@ -63,14 +63,14 @@ function PlatformCard({
         </span>
       </div>
 
-      <h3 className="text-xl font-bold text-white mb-1">{t(`${slug}.name`)}</h3>
-      <p className="text-stone-400 text-sm leading-relaxed mb-5 flex-1">
+      <h3 className="text-xl font-bold text-stone-900 mb-1">{t(`${slug}.name`)}</h3>
+      <p className="text-stone-500 text-sm leading-relaxed mb-5 flex-1">
         {t(`${slug}.tagline`)}
       </p>
 
       <ul className="space-y-2 mb-6">
         {features.map((feature) => (
-          <li key={feature} className="flex items-center gap-2 text-sm text-stone-300">
+          <li key={feature} className="flex items-center gap-2 text-sm text-stone-600">
             <Check size={14} className={clsx('shrink-0', accent.text)} />
             {feature}
           </li>

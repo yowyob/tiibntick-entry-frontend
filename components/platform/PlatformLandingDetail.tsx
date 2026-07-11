@@ -50,7 +50,7 @@ export default function PlatformLandingDetail({ slug }: { slug: PlatformSlug }) 
           <Link
             href="/"
             className={clsx(
-              'inline-flex items-center gap-1.5 text-stone-400 text-sm mb-10 transition-colors',
+              'inline-flex items-center gap-1.5 text-stone-500 text-sm mb-10 transition-colors',
               theme.backHover,
             )}
           >
@@ -64,14 +64,14 @@ export default function PlatformLandingDetail({ slug }: { slug: PlatformSlug }) 
                 {t('solutionBadge')}
               </div>
 
-              <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+              <h1 className="text-4xl sm:text-5xl font-extrabold text-stone-900 tracking-tight leading-[1.1] mb-6">
                 <span className="block">{t('heroTitleLine1')}</span>
                 <span className={clsx('block bg-gradient-to-r bg-clip-text text-transparent', theme.gradient)}>
                   {t('heroTitleLine2')}
                 </span>
               </h1>
 
-              <p className="text-stone-300 text-lg leading-relaxed mb-8 max-w-xl">
+              <p className="text-stone-600 text-lg leading-relaxed mb-8 max-w-xl">
                 {t('heroDescription')}
               </p>
 
@@ -110,11 +110,11 @@ export default function PlatformLandingDetail({ slug }: { slug: PlatformSlug }) 
             <div className="relative">
               <div className={clsx('glass-card p-6 sm:p-8 animate-float', theme.cardBorder)}>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-stone-400 text-sm">{t('heroCard.processing')}</span>
+                  <span className="text-stone-500 text-sm">{t('heroCard.processing')}</span>
                   <span className={clsx('font-bold text-sm', theme.text)}>{t('heroCard.progress')}</span>
                 </div>
 
-                <div className="h-2 rounded-full bg-white/10 mb-6 overflow-hidden">
+                <div className="h-2 rounded-full bg-stone-100 mb-6 overflow-hidden">
                   <div className={clsx('h-full w-3/4 rounded-full bg-gradient-to-r', theme.progress)} />
                 </div>
 
@@ -123,12 +123,12 @@ export default function PlatformLandingDetail({ slug }: { slug: PlatformSlug }) 
                     <HeroCardIcon size={20} className={theme.text} />
                   </div>
                   <div>
-                    <p className="text-white font-semibold">{t('heroCard.title')}</p>
-                    <p className="text-stone-400 text-sm">{t('heroCard.subtitle')}</p>
+                    <p className="text-stone-900 font-semibold">{t('heroCard.title')}</p>
+                    <p className="text-stone-500 text-sm">{t('heroCard.subtitle')}</p>
                   </div>
                 </div>
 
-                <p className="text-stone-400 text-sm leading-relaxed">{t('heroCard.description')}</p>
+                <p className="text-stone-500 text-sm leading-relaxed">{t('heroCard.description')}</p>
               </div>
 
               <div className={clsx('absolute -top-4 -right-4 w-24 h-24 rounded-full blur-2xl pointer-events-none', theme.blurOrb)} />
@@ -138,13 +138,13 @@ export default function PlatformLandingDetail({ slug }: { slug: PlatformSlug }) 
         </div>
       </section>
 
-      <section className="section-padding bg-ink-900/50">
+      <section className="section-padding bg-white">
         <div className="container-main">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className={clsx('font-semibold text-sm uppercase tracking-wider mb-3', theme.text)}>
               {t('innovation.sectionLabel')}
             </p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
               {t('innovation.sectionTitle')}
             </h2>
           </div>
@@ -165,8 +165,8 @@ export default function PlatformLandingDetail({ slug }: { slug: PlatformSlug }) 
                       <p className={clsx('text-xs font-semibold uppercase tracking-wider mb-1', theme.text)}>
                         {item.category}
                       </p>
-                      <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                      <p className="text-stone-400 text-sm leading-relaxed">{item.description}</p>
+                      <h3 className="text-lg font-bold text-stone-900 mb-2">{item.title}</h3>
+                      <p className="text-stone-500 text-sm leading-relaxed">{item.description}</p>
                     </div>
                   </div>
                 </article>
@@ -182,7 +182,7 @@ export default function PlatformLandingDetail({ slug }: { slug: PlatformSlug }) 
             <p className={clsx('font-semibold text-sm uppercase tracking-wider mb-3', theme.text)}>
               {t('workflow.sectionLabel')}
             </p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
               {t('workflow.sectionTitle')}
             </h2>
           </div>
@@ -207,8 +207,8 @@ export default function PlatformLandingDetail({ slug }: { slug: PlatformSlug }) 
                       {Icon && <Icon size={18} className={theme.text} />}
                     </div>
                   </div>
-                  <h3 className="text-white font-bold mb-2">{step.title}</h3>
-                  <p className="text-stone-400 text-sm leading-relaxed">{step.description}</p>
+                  <h3 className="text-stone-900 font-bold mb-2">{step.title}</h3>
+                  <p className="text-stone-500 text-sm leading-relaxed">{step.description}</p>
                 </article>
               )
             })}
@@ -216,12 +216,12 @@ export default function PlatformLandingDetail({ slug }: { slug: PlatformSlug }) 
         </div>
       </section>
 
-      <section className="section-padding bg-ink-900/50">
+      <section className="section-padding bg-white">
         <div className="container-main text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight mb-4">
             {t('cta.title')}
           </h2>
-          <p className="text-stone-400 leading-relaxed mb-8">{t('cta.description')}</p>
+          <p className="text-stone-500 leading-relaxed mb-8">{t('cta.description')}</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <ButtonLink href={platformUrls[slug].register} external>
               {t('cta.getStarted')}
