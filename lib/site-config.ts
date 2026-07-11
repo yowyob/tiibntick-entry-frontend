@@ -33,59 +33,61 @@ export type SiteConfig = {
   seasonalNoel: boolean
 }
 
+/** Hosts prod — utilisés si la variable d’env est absente (ex. déploiement sans .env). */
+const HOST = {
+  agency: 'https://tiibntick-agency.yowyob.com',
+  link: 'https://tiibntick-link.yowyob.com',
+  go: 'https://tiibntick-go.yowyob.com',
+  point: 'https://tiibntick-point.yowyob.com',
+  market: 'https://tiibntick-market.yowyob.com',
+} as const
+
+function env(key: string, fallback: string): string {
+  const value = process.env[key]?.trim()
+  return value && value.length > 0 ? value : fallback
+}
+
+function platformUrls(
+  prefix: 'LINK' | 'GO' | 'AGENCY' | 'POINT' | 'FREELANCER' | 'MARKET',
+  base: string,
+): PlatformUrlSet {
+  return {
+    landing: env(`NEXT_PUBLIC_${prefix}_LANDING_URL`, base),
+    register: env(`NEXT_PUBLIC_${prefix}_REGISTER_URL`, `${base}/register`),
+    login: env(`NEXT_PUBLIC_${prefix}_LOGIN_URL`, `${base}/login`),
+  }
+}
+
 export function getSiteConfig(): SiteConfig {
   return {
     urls: {
-      site: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
-      tracking: process.env.NEXT_PUBLIC_TRACKING_URL ?? '#',
-      sendParcel: process.env.NEXT_PUBLIC_SEND_PARCEL_URL ?? '#',
-      search: process.env.NEXT_PUBLIC_SEARCH_URL ?? '#',
-      coreDocs: process.env.NEXT_PUBLIC_CORE_DOCS_URL ?? '#',
-      confidence: process.env.NEXT_PUBLIC_CONFIDENCE_URL ?? '#',
+      site: env('NEXT_PUBLIC_SITE_URL', 'http://localhost:3000'),
+      tracking: env('NEXT_PUBLIC_TRACKING_URL', `${HOST.agency}/track`),
+      sendParcel: env('NEXT_PUBLIC_SEND_PARCEL_URL', `${HOST.agency}/track/deposit`),
+      search: env('NEXT_PUBLIC_SEARCH_URL', 'https://search.tiibntick.cm'),
+      coreDocs: env('NEXT_PUBLIC_CORE_DOCS_URL', 'https://docs.tiibntick.cm/core'),
+      confidence: env('NEXT_PUBLIC_CONFIDENCE_URL', 'https://confidence.tiibntick.cm'),
       legal: {
-        mentions: process.env.NEXT_PUBLIC_LEGAL_MENTIONS_URL ?? '#',
-        terms: process.env.NEXT_PUBLIC_TERMS_URL ?? '#',
-        privacy: process.env.NEXT_PUBLIC_PRIVACY_URL ?? '#',
-        cookies: process.env.NEXT_PUBLIC_COOKIES_URL ?? '#',
+        mentions: env('NEXT_PUBLIC_LEGAL_MENTIONS_URL', 'https://tiibntick.cm/mentions-legales'),
+        terms: env('NEXT_PUBLIC_TERMS_URL', 'https://tiibntick.cm/cgu'),
+        privacy: env('NEXT_PUBLIC_PRIVACY_URL', 'https://tiibntick.cm/confidentialite'),
+        cookies: env('NEXT_PUBLIC_COOKIES_URL', 'https://tiibntick.cm/cookies'),
       },
       social: {
-        facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL ?? '#',
-        twitter: process.env.NEXT_PUBLIC_TWITTER_URL ?? '#',
-        linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL ?? '#',
-        instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? '#',
+        facebook: env('NEXT_PUBLIC_FACEBOOK_URL', 'https://facebook.com/tiibntick'),
+        twitter: env('NEXT_PUBLIC_TWITTER_URL', 'https://twitter.com/tiibntick'),
+        linkedin: env('NEXT_PUBLIC_LINKEDIN_URL', 'https://linkedin.com/company/tiibntick'),
+        instagram: env('NEXT_PUBLIC_INSTAGRAM_URL', 'https://instagram.com/tiibntick'),
       },
     },
     platformUrls: {
-      link: {
-        landing: process.env.NEXT_PUBLIC_LINK_LANDING_URL ?? '#',
-        register: process.env.NEXT_PUBLIC_LINK_REGISTER_URL ?? '#',
-        login: process.env.NEXT_PUBLIC_LINK_LOGIN_URL ?? '#',
-      },
-      go: {
-        landing: process.env.NEXT_PUBLIC_GO_LANDING_URL ?? '#',
-        register: process.env.NEXT_PUBLIC_GO_REGISTER_URL ?? '#',
-        login: process.env.NEXT_PUBLIC_GO_LOGIN_URL ?? '#',
-      },
-      agency: {
-        landing: process.env.NEXT_PUBLIC_AGENCY_LANDING_URL ?? '#',
-        register: process.env.NEXT_PUBLIC_AGENCY_REGISTER_URL ?? '#',
-        login: process.env.NEXT_PUBLIC_AGENCY_LOGIN_URL ?? '#',
-      },
-      point: {
-        landing: process.env.NEXT_PUBLIC_POINT_LANDING_URL ?? '#',
-        register: process.env.NEXT_PUBLIC_POINT_REGISTER_URL ?? '#',
-        login: process.env.NEXT_PUBLIC_POINT_LOGIN_URL ?? '#',
-      },
-      freelancer: {
-        landing: process.env.NEXT_PUBLIC_FREELANCER_LANDING_URL ?? '#',
-        register: process.env.NEXT_PUBLIC_FREELANCER_REGISTER_URL ?? '#',
-        login: process.env.NEXT_PUBLIC_FREELANCER_LOGIN_URL ?? '#',
-      },
-      market: {
-        landing: process.env.NEXT_PUBLIC_MARKET_LANDING_URL ?? '#',
-        register: process.env.NEXT_PUBLIC_MARKET_REGISTER_URL ?? '#',
-        login: process.env.NEXT_PUBLIC_MARKET_LOGIN_URL ?? '#',
-      },
+      link: platformUrls('LINK', HOST.link),
+      go: platformUrls('GO', HOST.go),
+      agency: platformUrls('AGENCY', HOST.agency),
+      point: platformUrls('POINT', HOST.point),
+      // Freelancer = même plateforme que Go
+      freelancer: platformUrls('FREELANCER', HOST.go),
+      market: platformUrls('MARKET', HOST.market),
     },
     seasonalNoel: process.env.NEXT_PUBLIC_SEASONAL_THEME === 'noel',
   }
